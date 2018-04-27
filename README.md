@@ -16,7 +16,7 @@ Install module dependencies via pip, preferably within a virtual environment
 ## Models Implemented
 
 ### Deep Q Network  
-  explaination of DQN here  
+  explanation of DQN here  
     
   * **Experience Replay**
     
