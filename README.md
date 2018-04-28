@@ -23,7 +23,7 @@ An implementation of the Deep Q Learning neural network introduced by Deepmind i
 
 <Nature cover here>
 
-The Deep Q Network (DQN) is a hybrid Convolutional & Fully Connected neural network that approximates the Q-function for the state-space over which the agent is performing some set of actions using only raw pixel values as input.
+The **Deep Q Network (DQN)** is a hybrid Convolutional & Fully Connected neural network that approximates the Q-function for the state-space over which the agent is performing some set of actions using only raw pixel values as input.
 
 <DQN network diagram here>
 
