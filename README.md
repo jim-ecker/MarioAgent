@@ -8,7 +8,7 @@ Python 3 >= 3.5
 ### Debian/Ubuntu
 
 ```bash
-$ sudo apt install cmake libopenmpi-dev 
+$ sudo apt install cmake zlib1g-dev libopenmpi-dev 
 ```
 
 Install module dependencies via pip, preferably within a virtual environment  
