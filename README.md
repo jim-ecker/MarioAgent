@@ -27,6 +27,8 @@ NVIDIA proprietary video drivers
 
 NVIDIA Cuda 9.0
 
+NVIDIA CUDNN 7
+
 ```bash
 $ pip install tensorflow-gpu
 ```
