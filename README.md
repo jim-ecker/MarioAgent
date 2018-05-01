@@ -5,12 +5,18 @@ Testbed for Deep Reinforcement Learning methods on Super Mario Brothers (1985)
 
 Python 3 >= 3.5
 
+### Debian/Ubuntu
+
+```bash
+$ sudo apt install libopenmpi-dev
+```
+
 Install module dependencies via pip, preferably within a virtual environment  
 
 ```bash
-  pip install git+https://github.com/ppaquette/gym-super-mario  
-  pip install git+https://github.com/openai/baselines  
-  pip install gym opencv-python python-gflags
+$ pip install git+https://github.com/ppaquette/gym-super-mario  
+$ pip install git+https://github.com/openai/baselines  
+$ pip install gym opencv-python python-gflags
 ```
 
 ## Models Implemented
