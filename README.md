@@ -4,6 +4,8 @@ Testbed for Deep Reinforcement Learning methods on Super Mario Brothers (1985)
 ## Dependencies
 
 Python 3 >= 3.5
+NVIDIA proprietary video drivers
+NVIDIA Cuda 9.0
 
 ### Debian/Ubuntu
 
