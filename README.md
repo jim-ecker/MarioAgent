@@ -5,9 +5,7 @@ Testbed for Deep Reinforcement Learning methods on Super Mario Brothers (1985)
 
 Python 3 >= 3.5
 
-NVIDIA proprietary video drivers
 
-NVIDIA Cuda 9.0
 
 ### Debian/Ubuntu
 
@@ -20,8 +18,17 @@ Install module dependencies via pip, preferably within a virtual environment
 ```bash
 $ pip install git+https://github.com/ppaquette/gym-super-mario  
 $ pip install git+https://github.com/openai/baselines  
-$ pip install opencv-python python-gflags
+$ pip install opencv-python python-gflags 
 $ pip install gym==0.9.4
+```
+
+### If your system has a cuda capable GPU
+NVIDIA proprietary video drivers
+
+NVIDIA Cuda 9.0
+
+```bash
+$ pip install tensorflow-gpu
 ```
 
 ## Models Implemented
