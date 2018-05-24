@@ -1,6 +1,4 @@
 from deepq import deepq
-from acktr.policies import CnnPolicy
-from acktr import acktr_disc
 import gym
 
 import ppaquette_gym_super_mario
@@ -12,8 +10,6 @@ import gflags as flags
 import sys
 
 import numpy as np
-
-from pysc2.env import sc2_env
 
 import baselines.common.tf_util as U
 
