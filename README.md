@@ -6,7 +6,10 @@ Testbed for Deep Reinforcement Learning methods on Super Mario Brothers (1985)
 Python 3 >= 3.5
 
 
-
+### Mac OSX w/ Homebrew
+```bash
+$ brew install cmake fceux open-mpi
+```
 ### Debian/Ubuntu
 
 ```bash
