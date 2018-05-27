@@ -19,7 +19,7 @@ $ sudo apt install cmake fceux zlib1g-dev libopenmpi-dev
 Install module dependencies via pip, preferably within a virtual environment  
 
 ```bash
-$ pip install git+https://github.com/ppaquette/gym-super-mario  
+$ pip install git+https://github.com/jim-ecker/gym-super-mario.git
 $ pip install git+https://github.com/openai/baselines  
 $ pip install opencv-python python-gflags 
 ```
