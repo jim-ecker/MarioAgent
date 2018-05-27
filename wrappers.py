@@ -6,7 +6,7 @@ from gym import spaces
 class ProcessFrame84(gym.ObservationWrapper):
   def __init__(self, env=None):
     super(ProcessFrame84, self).__init__(env)
-    self.observation_space = spaces.Box(low=0, high=255, shape=(84, 84, 1))
+    self.observation_space = spaces.Box(low=0, high=255, shape=(84, 84, 4))
 
   def _observation(self, obs):
     return ProcessFrame84.process(obs)

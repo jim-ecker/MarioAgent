@@ -95,7 +95,7 @@ The functions in this file can are used to create the following functions:
 """
 import tensorflow as tf
 import baselines.common.tf_util as U
-from baselines.deepq.utils import BatchInput
+from baselines.deepq.utils import ObservationInput
 from baselines.deepq.build_graph import scope_vars, absolute_scope_name
 
 def default_param_noise_filter(var):
@@ -144,6 +144,7 @@ def build_act(make_obs_ph, q_func, num_actions, scope="deepq", reuse=None):
 `       See the top of the file for details.
   """
   with tf.variable_scope(scope, reuse=reuse):
+    
     observations_ph = make_obs_ph("observation")
     stochastic_ph = tf.placeholder(tf.bool, (), name="stochastic")
     update_eps_ph = tf.placeholder(tf.float32, (), name="update_eps")

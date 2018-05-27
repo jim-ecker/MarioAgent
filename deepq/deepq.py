@@ -11,7 +11,7 @@ from deepq                          import build_graph
 from baselines                      import logger
 from baselines.common.schedules     import LinearSchedule
 from baselines.deepq.replay_buffer  import ReplayBuffer,  PrioritizedReplayBuffer
-from baselines.deepq.utils          import BatchInput,    save_state,             load_state
+from baselines.deepq.utils          import ObservationInput
 
 class ActWrapper(object):
   def __init__(self, act, act_params):
@@ -174,7 +174,8 @@ def learn (
   sess.__enter__()
 
   def make_obs_ph(name):
-    return BatchInput((84,84,4), name=name)
+      print("ENV.OBSERVATION_SPACE: {}".format(env.observation_space))
+      return ObservationInput(env.observation_space, name=name)
 
   act, train, update_target, debug = build_graph.build_train(
     make_obs_ph        = make_obs_ph,
@@ -183,7 +184,7 @@ def learn (
     optimizer          = tf.train.AdamOptimizer(learning_rate=lr),
     gamma              = gamma,
     grad_norm_clipping = 10,
-    param_noise        = param_noise
+    param_noise        = param_noise,
   )
 
   act_params = {
