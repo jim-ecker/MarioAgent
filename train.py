@@ -88,15 +88,15 @@ def deepq_callback(locals):
         if 'mean_100ep_reward' in locals and locals['num_episodes'] >= 10 and locals['mean_100ep_reward'] > max_mean_reward:
             print("mean_100ep_reward : %s max_mean_reward : %s" % (locals['mean_100ep_reward'], max_mean_reward))
 
-    if not os.path.exists(os.path.join(PROJ_DIR, 'models/deepq/')):
-        try:
-          os.mkdir(os.path.join(PROJ_DIR,'models/'))
-        except Exception as e:
-          print(str(e))
-        try:
-          os.mkdir(os.path.join(PROJ_DIR,'models/deepq/'))
-        except Exception as e:
-          print(str(e))
+        if not os.path.exists(os.path.join(PROJ_DIR, 'models/deepq/')):
+            try:
+              os.mkdir(os.path.join(PROJ_DIR,'models/'))
+            except Exception as e:
+              print(str(e))
+            try:
+              os.mkdir(os.path.join(PROJ_DIR,'models/deepq/'))
+            except Exception as e:
+              print(str(e))
         if last_filename != "":
             os.remove(last_filename)
             print("delete last model file : %s" % last_filename)
