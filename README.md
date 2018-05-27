@@ -19,7 +19,6 @@ Install module dependencies via pip, preferably within a virtual environment
 $ pip install git+https://github.com/ppaquette/gym-super-mario  
 $ pip install git+https://github.com/openai/baselines  
 $ pip install opencv-python python-gflags 
-$ pip install gym==0.9.4
 ```
 
 ### If your system has a cuda capable GPU
