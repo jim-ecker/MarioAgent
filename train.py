@@ -1,9 +1,10 @@
 #!/usr/bin/env python
+# test comment
 import gym
 import os
 import sys
 import gflags as flags
-
+import math
 from baselines.logger import Logger, TensorBoardOutputFormat, HumanOutputFormat
 
 from deepq import deepq
